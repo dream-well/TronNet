@@ -44,7 +44,7 @@ namespace TronNet
 
         internal byte GetPublicAddressPrefix()
         {
-            return _network == TronNetwork.MainNet ? 0x41 : 0xa0;
+            return (byte)(_network == TronNetwork.MainNet ? 0x41 : 0xa0);
         }
 
         public static string GetPublicAddress(string privateKey, TronNetwork network = TronNetwork.MainNet)
@@ -70,14 +70,14 @@ namespace TronNet
             Array.Copy(address, 0, addressChecksum, 0, 21);
             Array.Copy(bytes, 0, addressChecksum, 21, 4);
 
-            if (_network == TronNetwork.MainNet)
-            {
-                _publicAddress = Base58Encoder.Encode(addressChecksum);
-            }
-            else
-            {
-                _publicAddress = addressChecksum.ToHex();
-            }
+            //if (_network == TronNetwork.MainNet)
+            //{
+            _publicAddress = Base58Encoder.Encode(addressChecksum);
+            //}
+            //else
+            //{
+            //    _publicAddress = addressChecksum.ToHex();
+            //}
             return _publicAddress;
         }
         public string GetPrivateKey()

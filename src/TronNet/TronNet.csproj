@@ -16,6 +16,7 @@ TronNet makes it easy to build TRON applications with .net.</Description>
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Nethereum.Util" Version="4.11.0" />
     <PackageReference Include="StowayNet.Extensions.DependencyInjection" Version="5.0.1" />
   </ItemGroup>
 
