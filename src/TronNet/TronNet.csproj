@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net5.0</TargetFramework>
+    <TargetFramework>net6.0</TargetFramework>
     <Authors>stoway</Authors>
     <Version>0.2.0</Version>
     <PackageProjectUrl>https://github.com/stoway/TronNet</PackageProjectUrl>
@@ -21,8 +21,12 @@ TronNet makes it easy to build TRON applications with .net.</Description>
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\TronNet.ABI\TronNet.ABI.csproj" />
-    <ProjectReference Include="..\TronNet.Protocol\TronNet.Protocol.csproj" />
+    <ProjectReference Include="..\TronNet.ABI\TronNet.ABI.csproj">
+      <ReferenceSourceTarget></ReferenceSourceTarget>
+    </ProjectReference>
+    <ProjectReference Include="..\TronNet.Protocol\TronNet.Protocol.csproj">
+      <ReferenceSourceTarget></ReferenceSourceTarget>
+    </ProjectReference>
   </ItemGroup>
 
 </Project>

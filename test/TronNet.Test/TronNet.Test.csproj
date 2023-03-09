@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net5.0</TargetFramework>
+    <TargetFramework>net6.0</TargetFramework>
 
     <IsPackable>false</IsPackable>
   </PropertyGroup>
@@ -20,9 +20,15 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\src\TronNet.ABI\TronNet.ABI.csproj" />
-    <ProjectReference Include="..\..\src\TronNet.Crypto\TronNet.Crypto.csproj" />
-    <ProjectReference Include="..\..\src\TronNet\TronNet.csproj" />
+    <ProjectReference Include="..\..\src\TronNet.ABI\TronNet.ABI.csproj">
+      <ReferenceSourceTarget></ReferenceSourceTarget>
+    </ProjectReference>
+    <ProjectReference Include="..\..\src\TronNet.Crypto\TronNet.Crypto.csproj">
+      <ReferenceSourceTarget></ReferenceSourceTarget>
+    </ProjectReference>
+    <ProjectReference Include="..\..\src\TronNet\TronNet.csproj">
+      <ReferenceSourceTarget></ReferenceSourceTarget>
+    </ProjectReference>
   </ItemGroup>
 
 </Project>

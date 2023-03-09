@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net5.0</TargetFramework>
+    <TargetFramework>net6.0</TargetFramework>
     <Authors>stoway</Authors>
     <Version>0.2.0</Version>
     <Company>stoway.net</Company>
@@ -14,7 +14,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\TronNet.Crypto\TronNet.Crypto.csproj" />
+    <ProjectReference Include="..\TronNet.Crypto\TronNet.Crypto.csproj">
+      <ReferenceSourceTarget></ReferenceSourceTarget>
+    </ProjectReference>
   </ItemGroup>
 
 </Project>

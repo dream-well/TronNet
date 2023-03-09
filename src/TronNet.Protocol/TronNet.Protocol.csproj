@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
 	<PropertyGroup>
-		<TargetFramework>net5.0</TargetFramework>
+		<TargetFramework>net6.0</TargetFramework>
 		<Version>0.2.0</Version>
 		<Authors>stoway</Authors>
 		<Company>stoway.net</Company>
@@ -38,17 +38,16 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<PackageReference Include="Google.Api.CommonProtos" Version="1.7.0" />
-		<PackageReference Include="Google.Protobuf" Version="3.13.0" />
-		<PackageReference Include="Google.Protobuf.Tools" Version="3.11.2" />
-		<PackageReference Include="Grpc" Version="2.26.0" />
-		<PackageReference Include="Grpc.Net.ClientFactory" Version="2.32.0" />
-		<PackageReference Include="Grpc.Tools" Version="2.32.0">
+		<PackageReference Include="Google.Api.CommonProtos" Version="2.8.0" />
+		<PackageReference Include="Google.Protobuf" Version="3.22.1" />
+		<PackageReference Include="Google.Protobuf.Tools" Version="3.22.1" />
+		<PackageReference Include="Grpc" Version="2.46.6" />
+		<PackageReference Include="Grpc.Net.ClientFactory" Version="2.51.0" />
+		<PackageReference Include="Grpc.Tools" Version="2.52.0">
 			<PrivateAssets>all</PrivateAssets>
 			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
 		</PackageReference>
-		<PackageReference Include="NBitcoin.Secp256k1">
-			<Version>1.0.3</Version>
+		<PackageReference Include="NBitcoin.Secp256k1" Version="3.1.1">
 		</PackageReference>
 	</ItemGroup>
 
